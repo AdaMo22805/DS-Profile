@@ -2,7 +2,7 @@
 // Maps filter button text to their dedicated category pages.
 // Add new entries here as you create more category pages.
 const categoryRoutes = {
-  'Data Visualizations': 'data_viz.html',
+  'Data Visualizations': 'data_viz/data_viz.html',
   // 'Machine Learning': 'machine-learning.html',
   // 'NLP': 'nlp.html',
   // 'Computer Vision': 'computer-vision.html',

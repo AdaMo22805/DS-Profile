@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Viz — Ada Mo</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="data-viz.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div>
+    <div class="header-eyebrow">Data Science Portfolio</div>
+    <h1 class="header-name">Ada <em>Mo</em></h1>
+  </div>
+  <div class="header-right">
+    <p class="header-tagline">Turning messy data into clear decisions since 2019</p>
+    <div class="header-links">
+      <a href="index.html">All Projects</a>
+      <a href="#">GitHub</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Resume</a>
+    </div>
+  </div>
+</header>
+
+<!-- BREADCRUMB -->
+<nav class="breadcrumb">
+  <a href="index.html">Portfolio</a>
+  <span class="breadcrumb-sep">/</span>
+  <span class="breadcrumb-current">Data Visualization</span>
+</nav>
+
+<!-- CATEGORY HERO -->
+<div class="category-hero">
+  <div>
+    <div class="category-eyebrow">
+      <span class="category-dot"></span>
+      Category
+    </div>
+    <h2 class="category-title">Data <em>Visualization</em></h2>
+    <p class="category-desc">
+      Transforming raw numbers into visual stories — interactive maps, animated dashboards, and explorable graphics that make complex datasets approachable and actionable.
+    </p>
+  </div>
+  <div class="category-meta">
+    <span class="count-badge"></span>
+    <span class="count-label">Projects</span>
+  </div>
+</div>
+
+<!-- TOOL STRIP -->
+<div class="tool-strip">
+  <span class="tool-strip-label">Tools used:</span>
+  <span class="tool-pill">D3.js</span>
+  <span class="tool-pill">Observable</span>
+  <span class="tool-pill">Tableau</span>
+  <span class="tool-pill">Plotly</span>
+  <span class="tool-pill">Python</span>
+  <span class="tool-pill">GeoJSON</span>
+  <span class="tool-pill">Vega-Lite</span>
+  <span class="tool-pill">Mapbox</span>
+</div>
+
+<!-- PROJECT LIST -->
+<div class="project-list">
+
+  <div class="list-header">
+    <span class="list-heading">All projects</span>
+    <div class="sort-controls">
+      <span class="sort-label">Sorted by year ↓</span>
+      <button class="sort-btn" data-sort="desc">Newest</button>
+      <button class="sort-btn" data-sort="asc">Oldest</button>
+    </div>
+  </div>
+
+  <!-- PROJECT 1 — Featured -->
+  <div class="project-row highlight">
+    <div class="row-num">01</div>
+    <div class="row-body">
+      <div class="featured-badge">◈ Featured</div>
+      <div class="row-year">2024</div>
+      <h3 class="row-title">Montessori Public Presence</h3>
+      <p class="row-desc">Tableau Dashboard visualizing the reach of Montessori public schools and relevant enrollment data in the United States.</p>
+      <div class="row-tags">
+        <span class="row-tag">Tableau</span>
+        <span class="row-tag">Figma</span>
+      </div>
+    </div>
+    <div class="row-metrics">
+      <div class="row-metric">
+        <span class="row-metric-val">—</span>
+        <span class="row-metric-label">Data points</span>
+      </div>
+      <div class="row-metric">
+        <span class="row-metric-val">—</span>
+        <span class="row-metric-label">Schools mapped</span>
+      </div>
+      <div class="row-arrow">→</div>
+    </div>
+  </div>
+
+  <!-- PROJECT 2 -->
+  <div class="project-row">
+    <div class="row-num">02</div>
+    <div class="row-body">
+      <div class="row-year">2024</div>
+      <h3 class="row-title">Global Sea Surface Temperature Dashboard</h3>
+      <p class="row-desc">Real-time Plotly Dash dashboard visualising NOAA sea surface temperature anomalies from 1982 to present. Features an animated choropleth, a trend decomposition panel, and El Niño/La Niña event overlays — used by a marine research team to brief policy stakeholders.</p>
+      <div class="row-tags">
+        <span class="row-tag">Plotly Dash</span>
+        <span class="row-tag">NOAA API</span>
+        <span class="row-tag">xarray</span>
+        <span class="row-tag">Python</span>
+        <span class="row-tag">Pandas</span>
+      </div>
+    </div>
+    <div class="row-metrics">
+      <div class="row-metric">
+        <span class="row-metric-val">42yr</span>
+        <span class="row-metric-label">Time span</span>
+      </div>
+      <div class="row-metric">
+        <span class="row-metric-val">1.2M</span>
+        <span class="row-metric-label">Grid cells</span>
+      </div>
+      <div class="row-arrow">→</div>
+    </div>
+  </div>
+
+  <!-- PROJECT 3 -->
+  <div class="project-row">
+    <div class="row-num">03</div>
+    <div class="row-body">
+      <div class="row-year">2023</div>
+      <h3 class="row-title">California Wildfire Risk Explorer</h3>
+      <p class="row-desc">Vega-Lite + Mapbox GL interactive map combining CAL FIRE incident history, fuel moisture readings, and wind direction forecasts into a composite risk score. Published as an open-source tool for county emergency planners, with over 2,400 unique users in the first month.</p>
+      <div class="row-tags">
+        <span class="row-tag">Vega-Lite</span>
+        <span class="row-tag">Mapbox GL</span>
+        <span class="row-tag">CAL FIRE API</span>
+        <span class="row-tag">R</span>
+        <span class="row-tag">GeoJSON</span>
+      </div>
+    </div>
+    <div class="row-metrics">
+      <div class="row-metric">
+        <span class="row-metric-val">2.4k</span>
+        <span class="row-metric-label">Users mo. 1</span>
+      </div>
+      <div class="row-metric">
+        <span class="row-metric-val">58</span>
+        <span class="row-metric-label">Counties</span>
+      </div>
+      <div class="row-arrow">→</div>
+    </div>
+  </div>
+
+  <!-- PROJECT 4 -->
+  <div class="project-row">
+    <div class="row-num">04</div>
+    <div class="row-body">
+      <div class="row-year">2022</div>
+      <h3 class="row-title">Tech Layoff Pulse — 2022 Edition</h3>
+      <p class="row-desc">Scrape-to-viz pipeline tracking tech sector layoffs across 340+ companies throughout 2022. A scrollytelling narrative built in Observable notebook walks through the data month by month, pairing a bump chart of affected headcount with a force-directed company graph. Shared in the Observable Top 10.</p>
+      <div class="row-tags">
+        <span class="row-tag">Observable</span>
+        <span class="row-tag">D3.js</span>
+        <span class="row-tag">Scrollytelling</span>
+        <span class="row-tag">Python</span>
+        <span class="row-tag">Playwright</span>
+      </div>
+    </div>
+    <div class="row-metrics">
+      <div class="row-metric">
+        <span class="row-metric-val">340+</span>
+        <span class="row-metric-label">Companies</span>
+      </div>
+      <div class="row-metric">
+        <span class="row-metric-val">Top 10</span>
+        <span class="row-metric-label">Observable</span>
+      </div>
+      <div class="row-arrow">→</div>
+    </div>
+  </div>
+
+  <!-- PROJECT 5 -->
+  <div class="project-row">
+    <div class="row-num">04</div>
+    <div class="row-body">
+      <div class="row-year">2022</div>
+      <h3 class="row-title">Tech Layoff Pulse — 2022 Edition</h3>
+      <p class="row-desc">Scrape-to-viz pipeline tracking tech sector layoffs across 340+ companies throughout 2022. A scrollytelling narrative built in Observable notebook walks through the data month by month, pairing a bump chart of affected headcount with a force-directed company graph. Shared in the Observable Top 10.</p>
+      <div class="row-tags">
+        <span class="row-tag">Observable</span>
+        <span class="row-tag">D3.js</span>
+        <span class="row-tag">Scrollytelling</span>
+        <span class="row-tag">Python</span>
+        <span class="row-tag">Playwright</span>
+      </div>
+    </div>
+    <div class="row-metrics">
+      <div class="row-metric">
+        <span class="row-metric-val">340+</span>
+        <span class="row-metric-label">Companies</span>
+      </div>
+      <div class="row-metric">
+        <span class="row-metric-val">Top 10</span>
+        <span class="row-metric-label">Observable</span>
+      </div>
+      <div class="row-arrow">→</div>
+    </div>
+  </div>
+
+</div><!-- end .project-list -->
+
+<footer>
+  <span>© 2024 Ada Mo</span>
+  <span>Data Visualization · projects</span>
+  <span>Last updated March 2024</span>
+</footer>
+
+<script src="data-viz.js"></script>
+
+</body>
+</html>
