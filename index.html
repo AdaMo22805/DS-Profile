@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DS Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div>
+    <div class="header-eyebrow">Data Science Portfolio</div>
+    <h1 class="header-name">Ada <em>Mo</em></h1>
+  </div>
+  <div class="header-right">
+    <p class="header-tagline">Turning messy data into clear decisions since 2019</p>
+    <div class="header-links">
+      <a href="#">GitHub</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Resume</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+</header>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stat-item">
+    <span class="stat-num">3</span>
+    <span class="stat-label">Projects</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-num">3</span>
+    <span class="stat-label">Publications</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-num">98k</span>
+    <span class="stat-label">Rows processed</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-num">7</span>
+    <span class="stat-label">Tools & stacks</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-num">∞</span>
+    <span class="stat-label">Curiosity</span>
+  </div>
+</div>
+
+<main>
+  <!-- SIDEBAR -->
+  <aside>
+    <div class="sidebar-section">
+      <div class="sidebar-label">Filter by domain</div>
+      <button class="filter-btn active">
+        <span class="filter-dot" style="background:#0d0d0d"></span>
+        All projects
+        <span class="filter-count">14</span>
+      </button>
+      <button class="filter-btn">
+        <span class="filter-dot" style="background:#c84b2f"></span>
+        Data Science
+        <span class="filter-count">5</span>
+      </button>
+      <button class="filter-btn">
+        <span class="filter-dot" style="background:#2f6ac8"></span>
+        Data Visualizations
+        <span class="filter-count">3</span>
+      </button>
+      <button class="filter-btn">
+        <span class="filter-dot" style="background:#2fc87a"></span>
+        Neural Networks
+        <span class="filter-count">4</span>
+      </button>
+      <button class="filter-btn">
+        <span class="filter-dot" style="background:#c8a02f"></span>
+        Machine Learning
+        <span class="filter-count">2</span>
+      </button>
+    </div>
+
+    <div class="sidebar-section">
+      <div class="sidebar-label">Stack</div>
+      <span class="skill-tag">Python</span>
+      <span class="skill-tag">PyTorch</span>
+      <span class="skill-tag">SQL</span>
+      <span class="skill-tag">R</span>
+      <span class="skill-tag">Spark</span>
+      <span class="skill-tag">scikit-learn</span>
+      <span class="skill-tag">dbt</span>
+      <span class="skill-tag">Tableau</span>
+      <span class="skill-tag">HuggingFace</span>
+    </div>
+
+    <div class="sidebar-section">
+      <div class="sidebar-label">Sort by</div>
+      <button class="filter-btn active">
+        <span style="font-size:0.7rem">↓</span> Most recent
+      </button>
+      <button class="filter-btn">
+        <span style="font-size:0.7rem">★</span> Featured first
+      </button>
+      <button class="filter-btn">
+        <span style="font-size:0.7rem">◈</span> Complexity
+      </button>
+    </div>
+  </aside>
+
+  <!-- PROJECTS AREA -->
+  <div class="projects-area">
+    <div class="projects-header">
+      <h2 class="projects-title">Selected Work</h2>
+      <div class="view-toggle">
+        <button class="view-btn active">Grid</button>
+        <button class="view-btn">List</button>
+      </div>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- FEATURED -->
+      <div class="project-card featured">
+        <div>
+          <div class="badge-featured">◈ Featured Project</div>
+          <div class="card-category">
+            <span class="cat-dot" style="background:#c84b2f"></span>
+            Machine Learning · 2024
+          </div>
+          <h3 class="card-title">Retail Demand<br>Forecasting Engine</h3>
+          <p class="card-desc">Built an LSTM-based demand forecasting model for a national retailer with 600+ SKUs. Reduced overstock by 23% and improved forecast accuracy from 68% to 91% MAPE over baseline ARIMA.</p>
+          <div class="card-tags">
+            <span class="card-tag">PyTorch</span>
+            <span class="card-tag">Time Series</span>
+            <span class="card-tag">LSTM</span>
+            <span class="card-tag">Airflow</span>
+            <span class="card-tag">AWS</span>
+          </div>
+        </div>
+        <div class="featured-right">
+          <div class="featured-visual">
+            <svg class="mini-chart" viewBox="0 0 240 130" preserveAspectRatio="none">
+              <!-- Grid lines -->
+              <line x1="0" y1="30" x2="240" y2="30" stroke="#ffffff10" stroke-width="1"/>
+              <line x1="0" y1="65" x2="240" y2="65" stroke="#ffffff10" stroke-width="1"/>
+              <line x1="0" y1="100" x2="240" y2="100" stroke="#ffffff10" stroke-width="1"/>
+              <!-- Actual line -->
+              <polyline points="10,95 40,85 70,90 100,70 130,75 160,55 190,45 220,30" fill="none" stroke="#c84b2f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <!-- Forecast line -->
+              <polyline points="160,55 190,40 220,25" fill="none" stroke="#f0a898" stroke-width="2" stroke-dasharray="5,3" stroke-linecap="round"/>
+              <!-- Confidence band -->
+              <polygon points="160,55 190,32 220,18 220,35 190,48 160,55" fill="#c84b2f" opacity="0.15"/>
+              <!-- Dots -->
+              <circle cx="10" cy="95" r="3" fill="#c84b2f"/>
+              <circle cx="220" cy="30" r="4" fill="#c84b2f"/>
+              <!-- Labels -->
+              <text x="12" y="120" fill="#ffffff50" font-size="9" font-family="monospace">Jan</text>
+              <text x="95" y="120" fill="#ffffff50" font-size="9" font-family="monospace">Apr</text>
+              <text x="185" y="120" fill="#ffffff50" font-size="9" font-family="monospace">Jul</text>
+              <text x="155" y="50" fill="#f0a898" font-size="8" font-family="monospace">forecast →</text>
+            </svg>
+          </div>
+          <div class="card-meta">
+            <div class="card-metric">
+              <span class="metric-val">91%</span>
+              <span class="metric-label">Accuracy</span>
+            </div>
+            <div class="card-metric">
+              <span class="metric-val">-23%</span>
+              <span class="metric-label">Overstock</span>
+            </div>
+            <div class="card-metric">
+              <span class="metric-val">600+</span>
+              <span class="metric-label">SKUs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="project-card">
+        <div class="card-category">
+          <span class="cat-dot" style="background:#2f6ac8"></span>
+          NLP · 2024
+        </div>
+        <h3 class="card-title">Clinical Note Summarizer</h3>
+        <p class="card-desc">Fine-tuned a BERT-based model on de-identified EHR data to auto-generate structured SOAP note summaries, saving physicians ~40 min/day.</p>
+        <div class="card-tags">
+          <span class="card-tag">HuggingFace</span>
+          <span class="card-tag">BERT</span>
+          <span class="card-tag">Healthcare</span>
+          <span class="card-tag">Transformers</span>
+        </div>
+        <div class="card-meta">
+          <div class="card-metric">
+            <span class="metric-val">88%</span>
+            <span class="metric-label">ROUGE-L</span>
+          </div>
+          <div class="card-metric">
+            <span class="metric-val">40m</span>
+            <span class="metric-label">Saved/day</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="project-card">
+        <div class="card-category">
+          <span class="cat-dot" style="background:#2fc87a"></span>
+          Data Viz · 2023
+        </div>
+        <h3 class="card-title">SF Transit Flow Atlas</h3>
+        <p class="card-desc">Interactive D3.js visualization of 12 months of SFMTA ridership data — animated flow maps, peak hour analysis, and delay heatmaps.</p>
+        <div class="card-tags">
+          <span class="card-tag">D3.js</span>
+          <span class="card-tag">Observable</span>
+          <span class="card-tag">GeoJSON</span>
+          <span class="card-tag">Python</span>
+        </div>
+        <div class="card-meta">
+          <div class="card-metric">
+            <span class="metric-val">4.2M</span>
+            <span class="metric-label">Data pts</span>
+          </div>
+          <div class="card-metric">
+            <span class="metric-val">12mo</span>
+            <span class="metric-label">Coverage</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="project-card">
+        <div class="card-category">
+          <span class="cat-dot" style="background:#c8a02f"></span>
+          Computer Vision · 2023
+        </div>
+        <h3 class="card-title">Aerial Crop Stress Detection</h3>
+        <p class="card-desc">CNN pipeline classifying drone imagery into 7 crop stress categories. Deployed via FastAPI for real-time field diagnostics on 10k-acre farms.</p>
+        <div class="card-tags">
+          <span class="card-tag">PyTorch</span>
+          <span class="card-tag">ResNet-50</span>
+          <span class="card-tag">FastAPI</span>
+          <span class="card-tag">Drone</span>
+        </div>
+        <div class="card-meta">
+          <div class="card-metric">
+            <span class="metric-val">94%</span>
+            <span class="metric-label">F1 Score</span>
+          </div>
+          <div class="card-metric">
+            <span class="metric-val">7</span>
+            <span class="metric-label">Classes</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 5 -->
+      <div class="project-card">
+        <div class="card-category">
+          <span class="cat-dot" style="background:#c84b2f"></span>
+          Machine Learning · 2023
+        </div>
+        <h3 class="card-title">Churn Prediction & Intervention</h3>
+        <p class="card-desc">Gradient boosting classifier + SHAP explainability dashboard for a SaaS company. Identified 3 key churn drivers, enabling targeted retention campaigns.</p>
+        <div class="card-tags">
+          <span class="card-tag">XGBoost</span>
+          <span class="card-tag">SHAP</span>
+          <span class="card-tag">Streamlit</span>
+          <span class="card-tag">SQL</span>
+        </div>
+        <div class="card-meta">
+          <div class="card-metric">
+            <span class="metric-val">0.87</span>
+            <span class="metric-label">AUC-ROC</span>
+          </div>
+          <div class="card-metric">
+            <span class="metric-val">$2.1M</span>
+            <span class="metric-label">Retained</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- End .projects-grid -->
+  </div><!-- End .projects-area -->
+</main>
+
+<footer>
+  <span>© 2024 Ada Mo</span>
+  <span>Built with curiosity & coffee</span>
+  <span>Last updated March 2024</span>
+</footer>
+
+<script src="nav.js"></script>
+
+</body>
+</html>
