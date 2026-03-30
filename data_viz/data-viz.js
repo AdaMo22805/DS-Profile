@@ -116,3 +116,25 @@
   if (defaultBtn) defaultBtn.classList.add('active');
   sortRows('desc', false);
 })();
+
+//link to projects after clicking row-arrow
+document.querySelectorAll('.row-arrow').forEach(arrow => {
+  arrow.addEventListener('click', function () {
+    const row = this.closest('.project-row');
+    if (row) {
+      const titleEl = row.querySelector('.row-title');
+      if (titleEl) {
+        const title = titleEl.textContent.trim();
+        // Map project titles to their respective URLs
+        const projectLinks = {
+          'Montessori Public Presence': 'https://public.tableau.com/app/profile/isabellacai/viz/MontessoriPublicPresence/largewebuse',
+          'Bike Watching': 'https://adamo22805.github.io/bikewatching_Boston/',
+          'Which Age Group is the Most Fit?': 'https://seashello.github.io/dsc106-final-project/',
+        };
+        if (projectLinks[title]) {
+          window.open(projectLinks[title], '_blank');
+        }
+      }
+    }
+  });
+});
